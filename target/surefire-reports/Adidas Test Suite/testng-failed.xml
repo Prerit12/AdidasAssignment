@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Adidas Test Suite]">
+  <listeners>
+    <listener class-name="com.adidas.utility.RetryListenerClass"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Adidas Test(failed)">
+    <classes>
+      <class name="com.adidas.Test.StoreTest">
+        <methods>
+          <include name="setup"/>
+          <include name="deleteDell"/>
+        </methods>
+      </class> <!-- com.adidas.Test.StoreTest -->
+    </classes>
+  </test> <!-- Adidas Test(failed) -->
+</suite> <!-- Failed suite [Adidas Test Suite] -->

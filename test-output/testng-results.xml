@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="12" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel test suite" duration-ms="60382" started-at="2021-01-20T11:31:02Z" finished-at="2021-01-20T11:32:03Z">
+    <groups>
+    </groups>
+    <test name="Adidas Test" duration-ms="60382" started-at="2021-01-20T11:31:02Z" finished-at="2021-01-20T11:32:03Z">
+      <class name="com.adidas.Test.APITest">
+        <test-method status="PASS" signature="getAvailablePets()[pri:1, instance:com.adidas.Test.APITest@56aac163]" name="getAvailablePets" duration-ms="4651" started-at="2021-01-20T11:31:03Z" finished-at="2021-01-20T11:31:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAvailablePets -->
+        <test-method status="PASS" signature="addPet()[pri:2, instance:com.adidas.Test.APITest@56aac163]" name="addPet" duration-ms="1589" started-at="2021-01-20T11:31:12Z" finished-at="2021-01-20T11:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPet -->
+        <test-method status="PASS" signature="updatePetStatus()[pri:3, instance:com.adidas.Test.APITest@56aac163]" name="updatePetStatus" duration-ms="1615" started-at="2021-01-20T11:31:14Z" finished-at="2021-01-20T11:31:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePetStatus -->
+        <test-method status="PASS" signature="deletePet()[pri:4, instance:com.adidas.Test.APITest@56aac163]" name="deletePet" duration-ms="1435" started-at="2021-01-20T11:31:16Z" finished-at="2021-01-20T11:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePet -->
+      </class> <!-- com.adidas.Test.APITest -->
+      <class name="com.adidas.Test.StoreTest">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.adidas.Test.StoreTest@1f7030a6]" name="setup" is-config="true" duration-ms="8988" started-at="2021-01-20T11:31:03Z" finished-at="2021-01-20T11:31:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b227d8d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="navigatePhone()[pri:1, instance:com.adidas.Test.StoreTest@1f7030a6]" name="navigatePhone" duration-ms="890" started-at="2021-01-20T11:31:12Z" finished-at="2021-01-20T11:31:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatePhone -->
+        <test-method status="PASS" signature="navigateMonitor()[pri:2, instance:com.adidas.Test.StoreTest@1f7030a6]" name="navigateMonitor" duration-ms="1116" started-at="2021-01-20T11:31:12Z" finished-at="2021-01-20T11:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateMonitor -->
+        <test-method status="PASS" signature="navigateLaptop()[pri:3, instance:com.adidas.Test.StoreTest@1f7030a6]" name="navigateLaptop" duration-ms="1220" started-at="2021-01-20T11:31:14Z" finished-at="2021-01-20T11:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateLaptop -->
+        <test-method status="PASS" signature="addSony()[pri:4, instance:com.adidas.Test.StoreTest@1f7030a6]" name="addSony" duration-ms="8577" started-at="2021-01-20T11:31:16Z" finished-at="2021-01-20T11:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSony -->
+        <test-method status="PASS" signature="addDell()[pri:5, instance:com.adidas.Test.StoreTest@1f7030a6]" name="addDell" duration-ms="7871" started-at="2021-01-20T11:31:24Z" finished-at="2021-01-20T11:31:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDell -->
+        <test-method status="SKIP" signature="deleteDell()[pri:6, instance:com.adidas.Test.StoreTest@1f7030a6]" name="deleteDell" duration-ms="13762" started-at="2021-01-20T11:31:32Z" finished-at="2021-01-20T11:31:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.adidas.Test.StoreTest.deleteDell(StoreTest.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDell -->
+        <test-method status="PASS" signature="deleteDell()[pri:6, instance:com.adidas.Test.StoreTest@1f7030a6]" name="deleteDell" duration-ms="7771" started-at="2021-01-20T11:31:46Z" finished-at="2021-01-20T11:31:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDell -->
+        <test-method status="PASS" signature="purchaseItem()[pri:7, instance:com.adidas.Test.StoreTest@1f7030a6]" name="purchaseItem" duration-ms="9016" started-at="2021-01-20T11:31:54Z" finished-at="2021-01-20T11:32:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseItem -->
+      </class> <!-- com.adidas.Test.StoreTest -->
+    </test> <!-- Adidas Test -->
+  </suite> <!-- Parallel test suite -->
+</testng-results>

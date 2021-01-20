@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel test suite" parallel ="classes" thread-count="2">
+	<listeners>
+		<listener class-name="com.adidas.utility.RetryListenerClass" />
+		<listener class-name="com.adidas.utility.TestListener" />
+	</listeners>
+	<test name="Adidas Test">
+		<classes>
+			<class name="com.adidas.Test.APITest" />
+			<class name="com.adidas.Test.StoreTest" />
+		</classes>
+	</test>
+</suite>
